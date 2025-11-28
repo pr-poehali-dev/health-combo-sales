@@ -30,7 +30,7 @@ const Index = () => {
     { icon: "Shield", title: "Боюсь побочек и привыкания", text: "Наши формулы — мягкие и нестимулирующие. Они не «разгоняют», а восстанавливают ЕСТЕСТВЕННЫЕ процессы организма. Идеально подходят для чувствительных, занятых и даже пожилых людей." },
     { icon: "Sparkles", title: "Уже пробовал БАДы — не почувствовал эффекта", text: "В отличие от разрозненных добавок, это — система. Экстракты + режим + знания + поддержка. Эффект ты почувствуешь уже в первую неделю." },
     { icon: "BookOpen", title: "Сложно разобраться, что и когда принимать", text: "Ты получаешь готовый режим приема и ежедневные напоминания. Всё, что от тебя требуется — следовать простым шагам." },
-    { icon: "TrendingUp", title: "Это дорого", text: "Комплект экстрактов отдельно стоит 60 000 ₽. Марафон — это твой шанс получить систему в 2 раза дешевле. Это инвестиция, которая окупится твоей энергией и продуктивностью." }
+    { icon: "TrendingUp", title: "Это дорого", text: "Комплект экстракты + БАДы + марафон в сумме стоит больше 60 000 ₽. А это предложение — твой шанс получить систему в 2 раза дешевле. Это инвестиция, которая окупится твоей энергией и продуктивностью." }
   ];
 
   return (
@@ -57,7 +57,7 @@ const Index = () => {
             onClick={scrollToBooking}
             className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-white text-lg px-10 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all animate-pulse-slow"
           >
-            Войти в число избранных
+            Узнать подробнее
           </Button>
           <p className="mt-6 text-sm text-gray-300">
             Когда места закончатся — попасть будет невозможно
@@ -112,9 +112,9 @@ const Index = () => {
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { num: "1", title: "Дает телу и мозгу недостающие элементы", text: "6 мощных CO₂-экстрактов (включая мухомор и ежовик) + набор БАД для глубокого восстановления" },
-              { num: "2", title: "Встраивает привычку заботы о себе", text: "Ежедневные ритуалы, простые задания и поддержка кураторов, чтобы ты больше никогда не возвращался в состояние выгорания" },
-              { num: "3", title: "Объясняет, как всё устроено", text: "Ты поймешь работу своего мозга и тела, чтобы навсегда сохранить контроль над своим состоянием" }
+              { num: "1", title: "Дает телу и мозгу недостающие элементы", text: "6 мощных CO₂-экстрактов (включая мухомор и ежовик) + набор БАДов для глубокого восстановления нервной системы, энергии и ясности ума." },
+              { num: "2", title: "Встраивает привычку заботы о себе", text: "Ежедневные ритуалы, простые задания и поддержка кураторов поможет в этом" },
+              { num: "3", title: "Объясняет, как всё устроено", text: "Ты поймешь работу своего мозга и тела, чтобы навсегда сохранить контроль над своим состоянием." }
             ].map((item, i) => (
               <Card key={i} className="p-8 text-center hover:shadow-xl transition-all border-2 border-gray-100">
                 <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center text-white text-2xl font-bold">
@@ -133,15 +133,15 @@ const Index = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900">
             📦 Что входит в марафон?
           </h2>
-          <p className="text-lg text-gray-700 text-center mb-2">
-            Ты получаешь не случайный набор добавок, а продуманную систему.
-          </p>
-          <p className="text-lg text-gray-700 text-center mb-4 font-semibold">
-            Она не закончится через 2 месяца, а останется с тобой навсегда.
+          <p className="text-lg text-gray-700 text-center mb-4">
+            Ты получаешь не просто набор добавок, а продуманную систему. 
+            <span className="font-semibold">Она не закончится через 2 месяца, а останется с тобой навсегда.</span>
           </p>
           <div className="text-center mb-12">
-            <p className="text-gray-600 mb-2">Общая стоимость всех элементов — <span className="line-through">~60 000 рублей</span></p>
-            <p className="text-3xl font-bold text-accent">По условиям марафона: 33 000 ₽</p>
+            <p className="text-gray-600 mb-2">Общая стоимость всех элементов — <span className="line-through">больше 60 000 рублей</span></p>
+            <p className="text-lg text-gray-700 mb-1">Но в честь Нового года ты платишь всего</p>
+            <p className="text-4xl font-bold text-accent">33 000 ₽</p>
+            <p className="text-gray-600 mt-2">И вот что входит в эту цену:</p>
           </div>
 
           <div className="mb-12">
@@ -178,28 +178,28 @@ const Index = () => {
               </li>
               <li className="flex items-start gap-2">
                 <Icon name="Check" className="text-green-500 shrink-0 mt-1" size={20} />
-                <span>Ежедневный трекер привычек — чтобы не пропустить ни дня</span>
+                <span>Ежедневный трекер привычек — чтобы не пропустить ни дня и не потратить деньги впустую</span>
               </li>
             </ul>
           </Card>
 
           <Card className="p-8 bg-gradient-to-br from-blue-50 to-purple-50 border-2 border-primary">
             <h3 className="text-2xl font-bold mb-4 text-gray-900 flex items-center gap-3">
-              <span className="text-3xl">3.</span> Марафон «Тело + Мозг» — твоя инструкция по применению
+              <span className="text-3xl">3.</span> Марафон «Тело + Мозг» — теория + практика
             </h3>
-            <p className="text-gray-600 mb-4">Теория + практика от исследователя биохакинга и создателя BIOAURA:</p>
+            <p className="text-gray-600 mb-4">От исследователя биохакинга и создателя BIOAURA:</p>
             <ul className="space-y-2 text-gray-700">
               <li className="flex items-start gap-2">
                 <Icon name="Check" className="text-accent shrink-0 mt-1" size={20} />
-                <span><strong>Структура:</strong> 1-й месяц — восстановление тела, 2-й месяц — полная перезагрузка мозга и переписывание программ</span>
+                <span>1-й месяц — восстановление тела и физического здоровья: очищение, питание, движение</span>
               </li>
               <li className="flex items-start gap-2">
                 <Icon name="Check" className="text-accent shrink-0 mt-1" size={20} />
-                <span><strong>Подкасты и практики</strong> — научные методики и личный опыт</span>
+                <span>2-й месяц — полная перезагрузка мозга, работа с психотравмами и переписывание программ</span>
               </li>
               <li className="flex items-start gap-2">
                 <Icon name="Check" className="text-accent shrink-0 mt-1" size={20} />
-                <span><strong>Поддержка кураторов</strong> — ответы на вопросы в режиме реального времени</span>
+                <span>Поддержка кураторов — ответы на вопросы в режиме реального времени</span>
               </li>
             </ul>
           </Card>
@@ -216,7 +216,59 @@ const Index = () => {
               onClick={scrollToBooking}
               className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-white text-lg px-10 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all"
             >
-              Хочу присоединиться
+              Хочу так
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 px-6 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">
+            ✨ Вот что изменится уже через 2 месяца:
+          </h2>
+          <div className="space-y-4 mb-12">
+            <div className="flex items-start gap-4 p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl">
+              <Icon name="Check" className="text-green-600 shrink-0 mt-1" size={28} />
+              <p className="text-lg text-gray-800">
+                Ты будешь <strong>засыпать за 10 минут, а просыпаться — без будильника</strong>. Отдохнувшим по-настоящему.
+              </p>
+            </div>
+            <div className="flex items-start gap-4 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl">
+              <Icon name="Check" className="text-purple-600 shrink-0 mt-1" size={28} />
+              <p className="text-lg text-gray-800">
+                Уйдет эта <strong>вечная тревога и раздражительность</strong>. Ты перестанешь срываться на близких и научишься гасить стресс до того, как он тебя накроет.
+              </p>
+            </div>
+            <div className="flex items-start gap-4 p-6 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl">
+              <Icon name="Check" className="text-orange-600 shrink-0 mt-1" size={28} />
+              <p className="text-lg text-gray-800">
+                <strong>Энергия будет ровной с утра до вечера</strong>. Никаких кофеиновых качелей — от «завелся» до «я снова как выжатый лимон»
+              </p>
+            </div>
+            <div className="flex items-start gap-4 p-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl">
+              <Icon name="Check" className="text-blue-600 shrink-0 mt-1" size={28} />
+              <p className="text-lg text-gray-800">
+                Ты <strong>поймешь, наконец, как работает твое тело</strong>. Ты получишь четкую схему, а не очередной список «попей вот это».
+              </p>
+            </div>
+            <div className="flex items-start gap-4 p-6 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl">
+              <Icon name="Check" className="text-indigo-600 shrink-0 mt-1" size={28} />
+              <p className="text-lg text-gray-800">
+                <strong>Всё выстроится в систему, которая работает сама</strong>. Сон, добавки, питание, вода — ты перестанешь думать об этом, потому что это станет твоей новой нормой.
+              </p>
+            </div>
+          </div>
+          <p className="text-2xl font-bold text-center text-gray-900 bg-gradient-to-r from-primary/10 to-accent/10 p-8 rounded-2xl">
+            В ИТОГЕ ты снова начнешь чувствовать себя собой — энергичным, с горящими глазами и удовольствием от жизни
+          </p>
+          <div className="text-center mt-8">
+            <Button 
+              size="lg" 
+              onClick={scrollToBooking}
+              className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-white text-lg px-10 py-6 rounded-full shadow-xl"
+            >
+              Хочу так
             </Button>
           </div>
         </div>
@@ -225,7 +277,7 @@ const Index = () => {
       <section className="py-12 px-6 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">
-            🔎 Боишься, что не сработает?
+            🔎 А что, если не сработает?
           </h2>
           <p className="text-lg text-gray-700 text-center mb-12">
             Мы нашли способ развеять твои сомнения:
@@ -287,36 +339,35 @@ const Index = () => {
             ⚡ Начни Новый год с перезагрузки организма
           </h2>
           <p className="text-xl mb-8 opacity-95">
-            У нас больше 30 000 подписчиков, но мы запускаем марафон только для <span className="font-bold">300 человек</span> — 
+            У нас больше 30 000 подписчиков, но мы запускаем марафон только для <span className="font-bold">300 человек (это лишь 1%)</span><br/>
             чтобы дать каждому максимальную поддержку.
           </p>
           <div className="space-y-4 mb-10 text-lg">
             <p className="flex items-center justify-center gap-2">
               <Icon name="CheckCircle2" size={24} />
-              <span><strong>Старт — 1 января.</strong> Идеальный день, чтобы начать жить по-новому.</span>
+              <span>Старт — 1 января. Идеальный день, чтобы начать жить по-новому.</span>
             </p>
             <p className="flex items-center justify-center gap-2">
               <Icon name="Gift" size={24} />
-              <span><strong>Подарок для всех, кто дойдёт до конца:</strong> набор уникальных сладостей с экстрактами.</span>
+              <span>Подарок для всех, кто дойдёт до конца: набор уникальных сладостей с экстрактами.</span>
             </p>
             <p className="flex items-center justify-center gap-2">
               <Icon name="Zap" size={24} />
-              <span><strong>Это твой уникальный шанс.</strong> Когда набор будет распродан, попасть на марафон будет невозможно.</span>
+              <span>Это твой уникальный шанс. Когда все места будут распроданы, попасть будет невозможно. Повтора пока не планируем.</span>
             </p>
           </div>
           <Button 
             size="lg" 
             className="bg-white text-primary hover:bg-gray-100 text-xl px-12 py-7 rounded-full shadow-2xl hover:scale-105 transition-transform font-bold"
           >
-            Успеть занять место →
+            Хочу попасть в 1% счастливчиков
           </Button>
           <p className="mt-8 text-lg opacity-90">
-            Сделай себе главный подарок в этом году — верни себе свое здоровье. Ведь оно бесценно.
+            Сделай себе ГЛАВНЫЙ подарок в этом году — верни себе свое здоровье. Ведь оно бесценно.
           </p>
           <div className="mt-12 pt-8 border-t border-white/20">
             <p className="text-base opacity-80">
-              <strong>P.S.</strong> Через 2 месяца ты либо проснешься с ясной головой и полный энергией, либо... как обычно. 
-              <span className="block mt-2 font-semibold">Выбор за тобой</span>
+              <strong>P.S.</strong> Через 2 месяца ты либо проснешься с ясной головой и наполненный энергией, либо... как обычно. Выбор за тобой
             </p>
           </div>
         </div>
