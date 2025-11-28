@@ -35,8 +35,11 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-white py-20 px-6">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-white py-16 px-6">
         <div className="max-w-5xl mx-auto text-center animate-fade-in">
+          <div className="mb-8 rounded-3xl overflow-hidden shadow-2xl max-w-3xl mx-auto">
+            <img src="https://cdn.poehali.dev/projects/bcf4ddef-f9fc-49b9-82c4-1e566576a493/files/01d97919-d1f1-407d-8a45-83f084a29d22.jpg" alt="Пробуждение с энергией" className="w-full h-64 object-cover" />
+          </div>
           <Badge className="mb-6 bg-gradient-to-r from-primary to-accent text-white border-0 px-6 py-2 text-base">
             🔥 Старт — 1 января 2025
           </Badge>
@@ -63,7 +66,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-gray-50">
+      <section className="py-12 px-6 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">
             ❓ Почему ничего не работало?
@@ -97,8 +100,11 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-white">
+      <section className="py-12 px-6 bg-white">
         <div className="max-w-5xl mx-auto">
+          <div className="mb-8 rounded-3xl overflow-hidden shadow-2xl max-w-2xl mx-auto">
+            <img src="https://cdn.poehali.dev/projects/bcf4ddef-f9fc-49b9-82c4-1e566576a493/files/f099865e-6be3-4924-ab6f-8be14dcd1d40.jpg" alt="Восстановление мозга" className="w-full h-56 object-cover" />
+          </div>
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             🚀 Марафон BIOAURA — это твой план
           </h2>
@@ -128,7 +134,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-gradient-to-br from-gray-50 to-purple-50">
+      <section className="py-12 px-6 bg-gradient-to-br from-gray-50 to-purple-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-gray-900">
             📦 Что входит в марафон?
@@ -202,14 +208,24 @@ const Index = () => {
           </Card>
 
           <div className="text-center mt-12">
-            <p className="text-2xl font-bold text-gray-900">
+            <div className="mb-8 rounded-3xl overflow-hidden shadow-2xl max-w-2xl mx-auto">
+              <img src="https://cdn.poehali.dev/projects/bcf4ddef-f9fc-49b9-82c4-1e566576a493/files/32ac07ee-94d3-4e59-bf08-8248ef7d96b8.jpg" alt="Продукты BIOAURA" className="w-full h-56 object-cover" />
+            </div>
+            <p className="text-2xl font-bold text-gray-900 mb-6">
               Всего за <span className="text-accent">33 000 ₽</span> ты получаешь полную перезагрузку своего здоровья
             </p>
+            <Button 
+              size="lg" 
+              onClick={scrollToBooking}
+              className="bg-gradient-to-r from-primary to-accent hover:opacity-90 text-white text-lg px-10 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all"
+            >
+              Начать перезагрузку сейчас
+            </Button>
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-white">
+      <section className="py-12 px-6 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">
             🔎 А вдруг не сработает?
@@ -247,7 +263,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-gradient-to-br from-purple-50 to-blue-50">
+      <section className="py-12 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-900">
             💬 Истории, которыми делятся наши клиенты
@@ -268,7 +284,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="booking" className="py-20 px-6 bg-gradient-to-br from-primary via-accent to-primary text-white">
+      <section id="booking" className="py-16 px-6 bg-gradient-to-br from-primary via-accent to-primary text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             ⚡ Начни Новый год с перезагрузки организма
