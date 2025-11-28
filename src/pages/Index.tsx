@@ -112,18 +112,13 @@ const Index = () => {
           </p>
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { num: "1", icon: "Pill", title: "Дает телу и мозгу недостающие элементы", text: "6 мощных CO₂-экстрактов (включая мухомор и ежовик) + набор БАД для глубокого восстановления" },
-              { num: "2", icon: "CheckCircle2", title: "Встраивает привычку заботы о себе", text: "Ежедневные ритуалы, простые задания и поддержка кураторов, чтобы ты больше никогда не возвращался в состояние выгорания" },
-              { num: "3", icon: "GraduationCap", title: "Объясняет, как всё устроено", text: "Ты поймешь работу своего мозга и тела, чтобы навсегда сохранить контроль над своим состоянием" }
+              { num: "1", title: "Дает телу и мозгу недостающие элементы", text: "6 мощных CO₂-экстрактов (включая мухомор и ежовик) + набор БАД для глубокого восстановления" },
+              { num: "2", title: "Встраивает привычку заботы о себе", text: "Ежедневные ритуалы, простые задания и поддержка кураторов, чтобы ты больше никогда не возвращался в состояние выгорания" },
+              { num: "3", title: "Объясняет, как всё устроено", text: "Ты поймешь работу своего мозга и тела, чтобы навсегда сохранить контроль над своим состоянием" }
             ].map((item, i) => (
               <Card key={i} className="p-8 text-center hover:shadow-xl transition-all border-2 border-gray-100">
-                <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center text-white text-2xl font-bold">
+                <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center text-white text-2xl font-bold">
                   {item.num}
-                </div>
-                <div className="mb-4 flex justify-center">
-                  <div className="p-3 bg-blue-50 rounded-full">
-                    <Icon name={item.icon} size={28} className="text-primary" />
-                  </div>
                 </div>
                 <h3 className="font-bold text-lg mb-3 text-gray-900">{item.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{item.text}</p>
