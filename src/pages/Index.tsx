@@ -35,23 +35,22 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-purple-50 to-white py-16 px-6">
-        <div className="max-w-5xl mx-auto text-center animate-fade-in">
-          <div className="mb-8 rounded-3xl overflow-hidden shadow-2xl max-w-3xl mx-auto">
-            <img src="https://cdn.poehali.dev/projects/bcf4ddef-f9fc-49b9-82c4-1e566576a493/files/01d97919-d1f1-407d-8a45-83f084a29d22.jpg" alt="Пробуждение с энергией" className="w-full h-64 object-cover" />
-          </div>
-          <Badge className="mb-6 bg-gradient-to-r from-primary to-accent text-white border-0 px-6 py-2 text-base">
+      <section className="relative overflow-hidden py-16 px-6 min-h-[600px] flex items-center">
+        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-accent/20 to-primary/20"></div>
+        <div className="max-w-5xl mx-auto text-center animate-fade-in relative z-10">
+          <Badge className="mb-6 bg-gradient-to-r from-primary to-accent text-white border-0 px-6 py-2 text-base shadow-lg">
             🔥 Старт — 1 января 2025
           </Badge>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white leading-tight drop-shadow-2xl">
             Просыпаешься уже разбитым, а к вечеру нет сил ни на себя, ни на семью?
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mb-4 leading-relaxed">
+          <p className="text-xl md:text-2xl text-gray-100 mb-4 leading-relaxed">
             А теперь представь: ты просыпаешься <span className="font-semibold text-primary">отдохнувшим</span>. 
             В голове — <span className="font-semibold text-accent">ясность</span>, в теле — здоровье и сила.
           </p>
-          <p className="text-lg text-gray-600 mb-8">
-            И нет, это не новогоднее чудо. Это — результат марафона <span className="font-bold text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">BIOAURA</span>.
+          <p className="text-lg text-gray-300 mb-8">
+            И нет, это не новогоднее чудо. Это — результат марафона <span className="font-bold text-white">BIOAURA</span>.
           </p>
           <Button 
             size="lg" 
@@ -60,7 +59,7 @@ const Index = () => {
           >
             Войти в число избранных
           </Button>
-          <p className="mt-6 text-sm text-gray-500">
+          <p className="mt-6 text-sm text-gray-300">
             Когда места закончатся — попасть будет невозможно
           </p>
         </div>
